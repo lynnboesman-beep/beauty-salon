@@ -1,0 +1,212 @@
+.animatedBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animated waves */
+.wave1, .wave2, .wave3 {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 50%, 
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+.wave1 {
+  top: -50%;
+  left: -50%;
+  animation: wave 20s linear infinite;
+  transform-origin: center;
+}
+
+.wave2 {
+  top: -60%;
+  right: -50%;
+  animation: wave 25s linear infinite reverse;
+  animation-delay: -5s;
+  opacity: 0.2;
+}
+
+.wave3 {
+  bottom: -50%;
+  left: -60%;
+  animation: wave 30s linear infinite;
+  animation-delay: -10s;
+  opacity: 0.15;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Floating particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, 
+    rgba(255, 255, 255, var(--opacity)) 0%, 
+    rgba(255, 255, 255, 0) 70%
+  );
+  border-radius: 50%;
+  width: var(--size);
+  height: var(--size);
+  left: var(--x);
+  bottom: -10px;
+  animation: float var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--opacity);
+  }
+  90% {
+    opacity: var(--opacity);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Salon-themed floating elements */
+.floatingElements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.element {
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  animation: sparkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.element:nth-child(1) { left: 10%; top: 20%; }
+.element:nth-child(2) { left: 80%; top: 15%; }
+.element:nth-child(3) { left: 20%; top: 60%; }
+.element:nth-child(4) { left: 70%; top: 80%; }
+.element:nth-child(5) { left: 50%; top: 40%; }
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) rotate(90deg) scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg) scale(0.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-30px) rotate(270deg) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+/* Subtle pulsing effect for extra elegance */
+.animatedBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 70%, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 50%, 
+    transparent 100%
+  );
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animatedBackground,
+  .wave1, .wave2, .wave3,
+  .particle,
+  .element,
+  .animatedBackground::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animatedBackground {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .particle {
+    display: none; /* Reduce particles on mobile for performance */
+  }
+  
+  .wave1, .wave2, .wave3 {
+    animation-duration: 30s; /* Slower animations on mobile */
+  }
+  
+  .element {
+    font-size: 1.2rem;
+  }
+}
