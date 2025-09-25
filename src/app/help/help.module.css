@@ -1,0 +1,385 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.main {
+  padding-top: 80px;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Quick Actions */
+.quickActions {
+  margin-bottom: 4rem;
+}
+
+.quickActions h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.actionCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.actionCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.actionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.actionIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.actionCard h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.actionCard p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Help Categories */
+.helpCategories {
+  margin-bottom: 4rem;
+}
+
+.helpCategories h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.categories {
+  display: grid;
+  gap: 2rem;
+}
+
+.category {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.categoryHeader {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.categoryIcon {
+  font-size: 2.5rem;
+}
+
+.categoryHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.categoryContent {
+  padding: 2rem;
+}
+
+.helpItem {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.helpItem:last-child {
+  border-bottom: none;
+}
+
+.helpItem h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.helpItem p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Contact Section */
+.contactSection {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contactSection p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contactOption {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contactIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactOption h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contactOption p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Emergency Section */
+.emergencySection {
+  margin-bottom: 4rem;
+}
+
+.emergencyCard {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.emergencyCard h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.emergencyCard p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.emergencyNote {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Tips Section */
+.tipsSection {
+  margin-bottom: 4rem;
+}
+
+.tipsSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tip {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip:hover {
+  transform: translateY(-5px);
+}
+
+.tip h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.tip p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .actionCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contactOptions {
+    grid-template-columns: 1fr;
+  }
+  
+  .tips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .categoryHeader {
+    padding: 1.5rem;
+  }
+  
+  .categoryContent {
+    padding: 1.5rem;
+  }
+  
+  .helpItem {
+    padding: 1rem 0;
+  }
+  
+  .content {
+    padding: 0 1rem 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .actionCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .tips {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactOption {
+    padding: 2rem;
+  }
+  
+  .emergencyCard {
+    padding: 2rem;
+  }
+  
+  .helpCategories h2,
+  .contactSection h2,
+  .tipsSection h2,
+  .quickActions h2 {
+    font-size: 2rem;
+  }
+}

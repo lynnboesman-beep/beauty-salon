@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import AnimatedBackground from '@/components/AnimatedBackground';
 
 export const metadata = {
@@ -16,8 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AnimatedBackground />
-        <Header />
-        <main>{children}</main>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+          <Header />
+          <main style={{ flex: 1 }}>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
