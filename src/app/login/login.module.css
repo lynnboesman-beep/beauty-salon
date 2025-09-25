@@ -123,3 +123,21 @@
 .toggleButton:hover {
   color: #0056b3;
 }
+
+.forgotPassword {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.forgotLink {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.forgotLink:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

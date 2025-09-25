@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import styles from './login.module.css';
 
 function LoginForm() {
@@ -18,10 +19,12 @@ function LoginForm() {
   const redirectTo = searchParams.get('redirect') || '/';
   const messageParam = searchParams.get('message');
 
-  // Show admin required message if present
+  // Show messages based on URL parameters
   useEffect(() => {
     if (messageParam === 'admin_required') {
       setMessage({text: 'Admin privileges required. Please login with an administrator account.', type: 'error'});
+    } else if (messageParam === 'password_updated') {
+      setMessage({text: 'Your password has been successfully updated! Please login with your new password.', type: 'success'});
     }
   }, [messageParam]);
 
@@ -152,6 +155,14 @@ function LoginForm() {
           {loading ? (isSignUp ? 'Creating Account...' : 'Logging in...') : (isSignUp ? 'Create Account' : 'Login')}
         </button>
       </form>
+      
+      {!isSignUp && (
+        <div className={styles.forgotPassword}>
+          <Link href="/forgot-password" className={styles.forgotLink}>
+            Forgot your password?
+          </Link>
+        </div>
+      )}
       
       <div className={styles.divider}>Or</div>
       
