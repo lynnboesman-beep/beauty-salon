@@ -42,7 +42,7 @@ export default function ContactPage() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <h1 className={styles.title}>Contact Us</h1>
-          <p className={styles.subtitle}>We'd love to hear from you. Get in touch today!</p>
+          <p className={styles.subtitle}>We&apos;d love to hear from you. Get in touch today!</p>
         </div>
 
         <div className={styles.content}>
@@ -119,7 +119,7 @@ export default function ContactPage() {
               {submitStatus === 'success' && (
                 <div className={styles.successMessage}>
                   <span className={styles.successIcon}>✅</span>
-                  Thank you for your message! We'll get back to you soon.
+                  Thank you for your message! We&apos;ll get back to you soon.
                 </div>
               )}
               
@@ -232,7 +232,7 @@ export default function ContactPage() {
               <h3>🚨 Need Immediate Assistance?</h3>
               <p>
                 For urgent matters or same-day appointments, please call us directly at{' '}
-                <strong>(555) 123-4567</strong>. We're here to help!
+                <strong>(555) 123-4567</strong>. We&apos;re here to help!
               </p>
             </div>
           </div>

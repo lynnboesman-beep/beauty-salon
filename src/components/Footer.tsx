@@ -14,7 +14,7 @@ const Footer = () => {
               <span className={styles.logoText}>Beauty Salon</span>
             </div>
             <p className={styles.description}>
-              Your premier destination for luxury beauty services. We've been transforming 
+              Your premier destination for luxury beauty services. We&apos;ve been transforming
               lives through exceptional beauty treatments for over a decade.
             </p>
             <div className={styles.socialLinks}>

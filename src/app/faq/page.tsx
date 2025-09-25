@@ -201,7 +201,7 @@ export default function FAQPage() {
           <div className={styles.helpSection}>
             <div className={styles.helpCard}>
               <h2>Still need help?</h2>
-              <p>Can't find the answer you're looking for? We're here to help!</p>
+              <p>Can&apos;t find the answer you&apos;re looking for? We&apos;re here to help!</p>
               <div className={styles.helpOptions}>
                 <a href="/contact" className={styles.helpButton}>
                   <span>📧</span>

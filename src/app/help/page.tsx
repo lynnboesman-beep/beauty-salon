@@ -50,7 +50,7 @@ export default function HelpCenterPage() {
                 <div className={styles.categoryContent}>
                   <div className={styles.helpItem}>
                     <h4>🔐 Having trouble logging in?</h4>
-                    <p>Use the "Forgot Password" link on the login page to reset your password. If you continue to have issues, contact our support team.</p>
+                    <p>Use the &quot;Forgot Password&quot; link on the login page to reset your password. If you continue to have issues, contact our support team.</p>
                   </div>
                   <div className={styles.helpItem}>
                     <h4>✏️ How to update your profile</h4>
@@ -71,16 +71,16 @@ export default function HelpCenterPage() {
                 </div>
                 <div className={styles.categoryContent}>
                   <div className={styles.helpItem}>
-                    <h4>🕐 Can't find available times?</h4>
+                    <h4>🕐 Can&apos;t find available times?</h4>
                     <p>Try selecting a different date or staff member. Popular times fill up quickly, so book as early as possible.</p>
                   </div>
                   <div className={styles.helpItem}>
                     <h4>📧 Booking confirmation emails</h4>
-                    <p>Confirmation emails are sent immediately after payment. Check your spam folder if you don't see it.</p>
+                    <p>Confirmation emails are sent immediately after payment. Check your spam folder if you don&apos;t see it.</p>
                   </div>
                   <div className={styles.helpItem}>
                     <h4>📋 Managing your bookings</h4>
-                    <p>View all your bookings in the "My Bookings" section. You can reschedule or cancel appointments there.</p>
+                    <p>View all your bookings in the &quot;My Bookings&quot; section. You can reschedule or cancel appointments there.</p>
                   </div>
                   <div className={styles.helpItem}>
                     <h4>⏰ Appointment reminders</h4>
@@ -181,7 +181,7 @@ export default function HelpCenterPage() {
               <h3>🚨 Need Immediate Assistance?</h3>
               <p>
                 For urgent matters, same-day appointments, or time-sensitive issues, 
-                please call us directly at <strong>(555) 123-4567</strong>. We're here to help!
+                please call us directly at <strong>(555) 123-4567</strong>. We&apos;re here to help!
               </p>
               <div className={styles.emergencyNote}>
                 <strong>Note:</strong> For medical emergencies, please contact emergency services immediately.

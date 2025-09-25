@@ -14,7 +14,7 @@ export default function AboutPage() {
             <div className={styles.textContent}>
               <h2>Our Story</h2>
               <p>
-                Welcome to our premier beauty salon, where we've been transforming lives through 
+                Welcome to our premier beauty salon, where we&apos;ve been transforming lives through
                 exceptional beauty services for over a decade. Founded in 2013 with a simple mission: 
                 to provide world-class beauty treatments in a luxurious, relaxing environment.
               </p>
@@ -104,11 +104,11 @@ export default function AboutPage() {
             <div className={styles.missionContent}>
               <h2>Our Mission</h2>
               <blockquote className={styles.mission}>
-                "To enhance natural beauty and boost confidence through exceptional service, 
-                creating a sanctuary where every client feels pampered, valued, and beautiful."
+                &quot;To enhance natural beauty and boost confidence through exceptional service,
+                creating a sanctuary where every client feels pampered, valued, and beautiful.&quot;
               </blockquote>
               <p>
-                We believe that beauty is about more than just appearance – it's about feeling 
+                We believe that beauty is about more than just appearance – it&apos;s about feeling
                 confident, radiant, and comfortable in your own skin. Our mission drives everything 
                 we do, from the services we offer to the atmosphere we create.
               </p>
@@ -132,7 +132,7 @@ export default function AboutPage() {
               </div>
               <div className={styles.certification}>
                 <h3>📜 Industry Recognition</h3>
-                <p>Awarded "Best Beauty Salon" by the Local Beauty Association for 3 consecutive years.</p>
+                <p>Awarded &quot;Best Beauty Salon&quot; by the Local Beauty Association for 3 consecutive years.</p>
               </div>
             </div>
           </section>
